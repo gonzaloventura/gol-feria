@@ -1,112 +1,575 @@
+'use client'
 import Image from 'next/image'
+import { useState, useEffect } from 'react';
+import smiles from "@/public/smiles.png"
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+const alt1 =
+  [
+    {
+      id: 0,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: false,
+      touched: false,
+      nivel: 4
+    }
+  ]
+
+const alt2 =
+  [
+    {
+      id: 0,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: false,
+      touched: false,
+      nivel: 4
+    }
+  ]
+
+const alt3 =
+  [
+    {
+      id: 0,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: true,
+      touched: false,
+      nivel: 4
+    }
+  ]
+
+const alt4 =
+  [
+    {
+      id: 0,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: false,
+      touched: false,
+      nivel: 4
+    }
+  ]
+
+const alt5 =
+  [
+    {
+      id: 0,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: false,
+      touched: false,
+      nivel: 4
+    }
+  ]
+
+const alt6 =
+  [
+    {
+      id: 0,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 3,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 6,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 9,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: false,
+      touched: false,
+      nivel: 4
+    }
+  ]
 
 export default function Home() {
+  const [data, setData] = useState([])
+
+  const [nivelUno, setNivelUno] = useState(false)
+  const [nivelDos, setNivelDos] = useState(false)
+  const [nivelTres, setNivelTres] = useState(false)
+  const [nivelCuatro, setNivelCuatro] = useState(false)
+
+  useEffect(() => {
+    let obtenerNumeroAleatorio = getRandomInt(6)
+    if (obtenerNumeroAleatorio == 0) {
+      setData(alt1)
+    } else if (obtenerNumeroAleatorio == 1) {
+      setData(alt2)
+    } else if (obtenerNumeroAleatorio == 2) {
+      setData(alt3)
+    } else if (obtenerNumeroAleatorio == 3) {
+      setData(alt4)
+    } else if (obtenerNumeroAleatorio == 4) {
+      setData(alt5)
+    } else {
+      setData(alt6)
+    }
+
+  }, [])
+
+  function filtrarNivel(nivel) {
+    const listaFiltrada = data.filter((n) => nivel == n.nivel)
+    return listaFiltrada
+  }
+
+
+  function play(nivel) {
+    switch (nivel) {
+      case 1: {
+        setNivelUno(true)
+        break
+      }
+      case 2: {
+        setNivelDos(true)
+        break
+      }
+      case 3: {
+        setNivelTres(true)
+        break
+      }
+      case 4: {
+        setNivelCuatro(true)
+        break
+      }
+    }
+  }
+
+  const Button = ({ isTrue, estado, nivel }) => {
+    switch (estado) {
+      case "default": {
+        if (isTrue) {
+          return <button onClick={() => { play(nivel) }} className='rounded-xl w-20 h-20 bg-orange-500'></button>
+        } else {
+          return <button className='rounded-xl w-20 h-20 bg-orange-500 focus:scale-110 transition-all duration-500'></button>
+        }
+      }
+      case "disabled": {
+        return <button disabled className='border-2 border-gray-400 rounded-xl w-20 h-20 bg-orange-500 disabled:bg-gray-300'></button>
+      }
+      case "touched": {
+        return <button className='border-2 border-green-600 rounded-xl w-20 h-20 bg-green-500 transition-all duration-500s animate-pulse flex items-center justify-center'>
+          <Image
+            width={50}
+            height={40}
+            src={smiles}
+          /></button>
+      }
+    }
+
+
+  }
+
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className='grid grid-cols-3 gap-4'>
+        {filtrarNivel(4).map((item) => {
+          return (
+            nivelTres ? item.valor ? nivelCuatro ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={4} estado={"default"} /> : <Button isTrue={item.valor} nivel={4} estado={"default"} /> : <Button isTrue={item.valor} nivel={4} estado={"disabled"} />
+          )
+        }
+        )}
+        {filtrarNivel(3).map((item) => {
+          return (
+            nivelDos ? item.valor ? nivelTres ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={3} estado={"default"} /> : <Button isTrue={item.valor} nivel={3} estado={"default"} /> : <Button isTrue={item.valor} nivel={3} estado={"disabled"} />
+          )
+        }
+        )}
+        {filtrarNivel(2).map((item) => {
+          return (
+            nivelUno ? item.valor ? nivelDos ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={2} estado={"default"} /> : <Button isTrue={item.valor} nivel={2} estado={"default"} /> : <Button isTrue={item.valor} nivel={2} estado={"disabled"} />
+          )
+        }
+        )}
+        {filtrarNivel(1).map((item) => {
+          return (
+            item.valor ? nivelUno ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={1} estado={"default"} /> : <Button isTrue={item.valor} nivel={1} estado={"default"} />
+          )
+        }
+        )}
       </div>
     </main>
   )
