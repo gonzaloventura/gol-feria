@@ -22,6 +22,15 @@ body {
 }
 
 .fondo-cielo{
-  background: rgb(171,243,255);
-  background: linear-gradient(0deg, rgba(171,243,255,0.713344712885154) 0%, rgba(0,153,255,0.6741290266106443) 100%);
+  background: rgb(60,196,222);
+  background: linear-gradient(90deg, rgba(60,196,222,0.2) 0%, rgba(42,157,255,0.2) 100%);
+  height: 100vh;
+}
+
+.video {   
+  object-fit: cover;   
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1; 
 }
