@@ -1051,7 +1051,7 @@ const alt7 =
   [
     {
       id: 0,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 1
     },
@@ -1063,7 +1063,7 @@ const alt7 =
     },
     {
       id: 2,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 1
     },
@@ -1089,7 +1089,7 @@ const alt7 =
     // ----------------------
     {
       id: 6,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 3
     },
@@ -1101,7 +1101,7 @@ const alt7 =
     },
     {
       id: 8,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 3
     },
@@ -1146,7 +1146,7 @@ const alt7 =
     // ----------------------
     {
       id: 15,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 6
     },
@@ -1158,7 +1158,7 @@ const alt7 =
     },
     {
       id: 17,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 6
     },
@@ -1184,7 +1184,7 @@ const alt7 =
     // ----------------------
     {
       id: 21,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 8
     },
@@ -1196,7 +1196,7 @@ const alt7 =
     },
     {
       id: 23,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 8
     },
@@ -1209,13 +1209,13 @@ const alt7 =
     },
     {
       id: 25,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 9
     },
     {
       id: 26,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 9
     }
@@ -1243,13 +1243,13 @@ const alt8 =
     // ----------------------
     {
       id: 3,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 2
     },
     {
       id: 4,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 2
     },
@@ -1281,7 +1281,7 @@ const alt8 =
     // ----------------------
     {
       id: 9,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 4
     },
@@ -1293,20 +1293,20 @@ const alt8 =
     },
     {
       id: 11,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 4
     },
     // ----------------------
     {
       id: 12,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 5
     },
     {
       id: 13,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 5
     },
@@ -1416,7 +1416,7 @@ const alt9 =
     // ----------------------
     {
       id: 3,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 2
     },
@@ -1428,7 +1428,7 @@ const alt9 =
     },
     {
       id: 5,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 2
     },
@@ -1460,13 +1460,13 @@ const alt9 =
     },
     {
       id: 10,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 4
     },
     {
       id: 11,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 4
     },
@@ -1511,13 +1511,13 @@ const alt9 =
     // ----------------------
     {
       id: 18,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 7
     },
     {
       id: 19,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 7
     },
@@ -1536,20 +1536,20 @@ const alt9 =
     },
     {
       id: 22,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 8
     },
     {
       id: 23,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 8
     },
     // ----------------------
     {
       id: 24,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 9
     },
@@ -1561,7 +1561,7 @@ const alt9 =
     },
     {
       id: 26,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 9
     }
@@ -1576,13 +1576,13 @@ const alt10 =
     },
     {
       id: 1,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 1
     },
     {
       id: 2,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 1
     },
@@ -1627,7 +1627,7 @@ const alt10 =
     // ----------------------
     {
       id: 9,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 4
     },
@@ -1639,7 +1639,7 @@ const alt10 =
     },
     {
       id: 11,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 4
     },
@@ -1671,13 +1671,13 @@ const alt10 =
     },
     {
       id: 16,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 6
     },
     {
       id: 17,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 6
     },
@@ -1685,7 +1685,7 @@ const alt10 =
     {
       id: 18,
       valor: false,
-      touched: false,
+      touched: true,
       nivel: 7
     },
     {
@@ -1696,7 +1696,7 @@ const alt10 =
     },
     {
       id: 20,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 7
     },
@@ -1722,7 +1722,7 @@ const alt10 =
     // ----------------------
     {
       id: 24,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 9
     },
@@ -1734,7 +1734,7 @@ const alt10 =
     },
     {
       id: 26,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 9
     }
@@ -1781,13 +1781,13 @@ const alt11 =
     // ----------------------
     {
       id: 6,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 3
     },
     {
       id: 7,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 3
     },
@@ -1800,7 +1800,7 @@ const alt11 =
     // ----------------------
     {
       id: 9,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 4
     },
@@ -1812,20 +1812,20 @@ const alt11 =
     },
     {
       id: 11,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 4
     },
     // ----------------------
     {
       id: 12,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 5
     },
     {
       id: 13,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 5
     },
@@ -1838,7 +1838,7 @@ const alt11 =
     // ----------------------
     {
       id: 15,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 6
     },
@@ -1850,20 +1850,20 @@ const alt11 =
     },
     {
       id: 17,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 6
     },
     // ----------------------
     {
       id: 18,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 7
     },
     {
       id: 19,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 7
     },
@@ -1922,20 +1922,20 @@ const alt12 =
     },
     {
       id: 1,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 1
     },
     {
       id: 2,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 1
     },
     // ----------------------
     {
       id: 3,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 2
     },
@@ -1947,14 +1947,14 @@ const alt12 =
     },
     {
       id: 5,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 2
     },
     // ----------------------
     {
       id: 6,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 3
     },
@@ -1966,7 +1966,7 @@ const alt12 =
     },
     {
       id: 8,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 3
     },
@@ -1992,13 +1992,13 @@ const alt12 =
     // ----------------------
     {
       id: 12,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 5
     },
     {
       id: 13,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 5
     },
@@ -2017,26 +2017,26 @@ const alt12 =
     },
     {
       id: 16,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 6
     },
     {
       id: 17,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 6
     },
     // ----------------------
     {
       id: 18,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 7
     },
     {
       id: 19,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 7
     },
