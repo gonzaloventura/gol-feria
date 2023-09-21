@@ -1690,7 +1690,7 @@ const alt10 =
     },
     {
       id: 19,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 7
     },
