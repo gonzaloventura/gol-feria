@@ -20,3 +20,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #37322D
 }
+
+.fondo-cielo{
+  background: rgb(171,243,255);
+  background: linear-gradient(0deg, rgba(171,243,255,0.713344712885154) 0%, rgba(0,153,255,0.6741290266106443) 100%);
+}

@@ -2460,10 +2460,12 @@ export default function Home() {
           </>
         }
         {lostState &&
-          <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-black bg-opacity-60 text-orange-500 flex place-content-center items-center -left justify-center z-20'>
-            <h1 className='text-9xl font-bold'>GAME OVER</h1>
-            <button className='text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500' onClick={() => location.replace('/')}>Regresar</button>
-          </div>
+          <>
+            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen fondo-cielo flex place-content-center items-center -left justify-center z-20'>
+              <h1 className='text-white text-9xl font-bold'>GAME OVER</h1>
+              <button className='text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500 z-50' onClick={() => location.replace('/')}>Regresar</button>
+            </div>
+          </>
         }
 
         {filtrarNivel(9).map((item) => {
