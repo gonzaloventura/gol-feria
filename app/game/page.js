@@ -2305,10 +2305,13 @@ export default function Home() {
     } else {
       setData(alt13)
     }
-    mostrarCamino()
     setTimeout(() => {
-      ocultarCamino()
-    }, "1250");
+      mostrarCamino()
+      setTimeout(() => {
+        ocultarCamino()
+      }, "1000");
+    }, "1000");
+
 
   }, [])
 
@@ -2524,8 +2527,8 @@ export default function Home() {
         )}
       </div>
       <video muted autoPlay loop className='video'>
-          <source src="./fondo.mp4" type="video/mp4" />
-        </video>
+        <source src="./fondo.mp4" type="video/mp4" />
+      </video>
     </main>
   )
 }
