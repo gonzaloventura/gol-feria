@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("/public/fonts/GOLSansText-Regular.woff");
+@import url("/public/fonts/GOLSansText-Bold.woff");
+@import url("/public/fonts/GOLSansText-Bold.ttf");
+@import url("/public/fonts/GOLSansText-Bold.ttf");
+
+@font-face {
+  font-family: "GOLSansTextRegular";
+  font-style: normal;
+  src: url("/fonts/GOLSansText-Regular.woff") format('woff');
+}
+@font-face {
+  font-family: "GOLSansText-Bold";
+  font-style: bold;
+  src: url("/fonts/GOLSansText-Bold.woff") format('woff');
+}
+
+
+*{
+  font-family: 'GOLSansTextRegular';
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

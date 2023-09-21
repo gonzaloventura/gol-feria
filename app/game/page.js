@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import smiles from "@/public/smiles.png"
+import logo from "@/public/logo.png"
 import Confetti from 'react-confetti'
 
 
@@ -2310,7 +2311,7 @@ export default function Home() {
       setTimeout(() => {
         ocultarCamino()
       }, "1200");
-    }, "800");
+    }, "2000");
 
 
   }, [])
@@ -2433,7 +2434,7 @@ export default function Home() {
           <Image
             width={130}
             height={100}
-            src={smiles}
+            src={logo}
           /></button>
       }
     }
@@ -2443,8 +2444,9 @@ export default function Home() {
 
 
   return (
-    <main className="flex flex-col items-center justify-between fondo-cielo">
-      <div className='grid grid-cols-3 gap-4 p-32'>
+    <main className="flex flex-col items-center fondo-cielo">
+      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-7xl drop-shadow-lg text-center mt-20'>La mejor ruta aérea<br/> entre Argentina y Brasil.</h1>
+      <div className='animate-fade animate-delay-500 animate-duration-[1500ms] grid grid-cols-3 gap-4 p-12'>
         {endState &&
           <>
             <div className='absolute top-0 left-0 z-30'>
@@ -2465,7 +2467,7 @@ export default function Home() {
         {lostState &&
           <>
             <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-60 text-orange-600 flex place-content-center items-center -left justify-center z-20'>
-              <h1 className='text-9xl font-bold'>GAME OVER</h1>
+              <h1 className='text-9xl font-bold animate-jump-in animate-delay-500 animate-duration-[2500ms]'>GAME OVER</h1>
               <button className='text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
           </>
