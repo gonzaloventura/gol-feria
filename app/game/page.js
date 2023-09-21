@@ -2085,6 +2085,179 @@ const alt12 =
       nivel: 9
     }
   ]
+const alt13 =
+  [
+    {
+      id: 0,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 1,
+      valor: true,
+      touched: false,
+      nivel: 1
+    },
+    {
+      id: 2,
+      valor: false,
+      touched: false,
+      nivel: 1
+    },
+    // ----------------------
+    {
+      id: 3,
+      valor: true,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 4,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    {
+      id: 5,
+      valor: false,
+      touched: false,
+      nivel: 2
+    },
+    // ----------------------
+    {
+      id: 6,
+      valor: true,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 7,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    {
+      id: 8,
+      valor: false,
+      touched: false,
+      nivel: 3
+    },
+    // ----------------------
+    {
+      id: 9,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 10,
+      valor: false,
+      touched: false,
+      nivel: 4
+    },
+    {
+      id: 11,
+      valor: true,
+      touched: false,
+      nivel: 4
+    },
+    // ----------------------
+    {
+      id: 12,
+      valor: false,
+      touched: false,
+      nivel: 5
+    },
+    {
+      id: 13,
+      valor: true,
+      touched: false,
+      nivel: 5
+    },
+    {
+      id: 14,
+      valor: false,
+      touched: false,
+      nivel: 5
+    },
+    // ----------------------
+    {
+      id: 15,
+      valor: false,
+      touched: false,
+      nivel: 6
+    },
+    {
+      id: 16,
+      valor: false,
+      touched: false,
+      nivel: 6
+    },
+    {
+      id: 17,
+      valor: true,
+      touched: false,
+      nivel: 6
+    },
+    // ----------------------
+    {
+      id: 18,
+      valor: false,
+      touched: false,
+      nivel: 7
+    },
+    {
+      id: 19,
+      valor: false,
+      touched: false,
+      nivel: 7
+    },
+    {
+      id: 20,
+      valor: true,
+      touched: false,
+      nivel: 7
+    },
+    // ----------------------
+    {
+      id: 21,
+      valor: false,
+      touched: false,
+      nivel: 8
+    },
+    {
+      id: 22,
+      valor: false,
+      touched: false,
+      nivel: 8
+    },
+    {
+      id: 23,
+      valor: true,
+      touched: false,
+      nivel: 8
+    },
+    // ----------------------
+    {
+      id: 24,
+      valor: false,
+      touched: false,
+      nivel: 9
+    },
+    {
+      id: 25,
+      valor: true,
+      touched: false,
+      nivel: 9
+    },
+    {
+      id: 26,
+      valor: false,
+      touched: false,
+      nivel: 9
+    }
+  ]
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -2103,7 +2276,7 @@ export default function Home() {
   const [nivelPasado, setNivelPasado] = useState(0)
 
   useEffect(() => {
-    let obtenerNumeroAleatorio = getRandomInt(11)
+    const obtenerNumeroAleatorio = getRandomInt(13)
     if (obtenerNumeroAleatorio == 0) {
       setData(alt1)
     } else if (obtenerNumeroAleatorio == 1) {
@@ -2129,7 +2302,7 @@ export default function Home() {
     } else if (obtenerNumeroAleatorio == 11) {
       setData(alt12)
     } else {
-      setData(alt3)
+      setData(alt13)
     }
 
   }, [])
