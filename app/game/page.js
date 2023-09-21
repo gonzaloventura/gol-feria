@@ -2103,7 +2103,7 @@ export default function Home() {
   const [nivelPasado, setNivelPasado] = useState(0)
 
   useEffect(() => {
-    let obtenerNumeroAleatorio = getRandomInt(5)
+    let obtenerNumeroAleatorio = getRandomInt(11)
     if (obtenerNumeroAleatorio == 0) {
       setData(alt1)
     } else if (obtenerNumeroAleatorio == 1) {
@@ -2114,8 +2114,22 @@ export default function Home() {
       setData(alt4)
     } else if (obtenerNumeroAleatorio == 4) {
       setData(alt5)
-    } else {
+    } else if (obtenerNumeroAleatorio == 5) {
       setData(alt6)
+    } else if (obtenerNumeroAleatorio == 6) {
+      setData(alt7)
+    } else if (obtenerNumeroAleatorio == 7) {
+      setData(alt8)
+    } else if (obtenerNumeroAleatorio == 8) {
+      setData(alt9)
+    } else if (obtenerNumeroAleatorio == 9) {
+      setData(alt10)
+    } else if (obtenerNumeroAleatorio == 10) {
+      setData(alt11)
+    } else if (obtenerNumeroAleatorio == 11) {
+      setData(alt12)
+    } else {
+      setData(alt3)
     }
 
   }, [])
