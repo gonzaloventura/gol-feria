@@ -2274,6 +2274,7 @@ export default function Home() {
   const [endState, setEndState] = useState(false)
   const [lostState, setLostState] = useState(false)
   const [nivelPasado, setNivelPasado] = useState(0)
+  const [sinEfecto, setSinEfecto] = useState(true)
 
   useEffect(() => {
     const obtenerNumeroAleatorio = getRandomInt(13)
@@ -2304,8 +2305,37 @@ export default function Home() {
     } else {
       setData(alt13)
     }
+    mostrarCamino()
+    setTimeout(() => {
+      ocultarCamino()
+    }, "2000");
 
   }, [])
+
+  function mostrarCamino() {
+    setNivelUno(true)
+    setNivelDos(true)
+    setNivelTres(true)
+    setNivelCuatro(true)
+    setNivelCinco(true)
+    setNivelSeis(true)
+    setNivelSiete(true)
+    setNivelOcho(true)
+    setNivelNueve(true)
+  }
+
+  function ocultarCamino() {
+    setNivelUno(false)
+    setNivelDos(false)
+    setNivelTres(false)
+    setNivelCuatro(false)
+    setNivelCinco(false)
+    setNivelSeis(false)
+    setNivelSiete(false)
+    setNivelOcho(false)
+    setNivelNueve(false)
+    setSinEfecto(false)
+  }
 
   function filtrarNivel(nivel) {
     const listaFiltrada = data.filter((n) => nivel == n.nivel)
@@ -2396,7 +2426,7 @@ export default function Home() {
         return <button disabled className='border-2 border-gray-400 rounded-xl w-40 h-40 bg-orange-500 disabled:bg-gray-300'></button>
       }
       case "touched": {
-        return <button className='animate-fade animate-delay-150 animate-once border-2 border-green-600 rounded-xl w-40 h-40 bg-green-500 bg-opacity-50 transition-all duration-500s flex items-center justify-center'>
+        return <button className='animate-fade animate-delay-250 animate-once border-2 border-green-600 rounded-xl w-40 h-40 bg-green-500 bg-opacity-50 transition-all duration-500s flex items-center justify-center'>
           <Image
             width={130}
             height={100}
