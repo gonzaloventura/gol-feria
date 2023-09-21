@@ -2308,7 +2308,7 @@ export default function Home() {
     mostrarCamino()
     setTimeout(() => {
       ocultarCamino()
-    }, "750");
+    }, "1250");
 
   }, [])
 
