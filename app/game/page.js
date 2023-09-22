@@ -10,526 +10,7 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-const alt1 =
-  [
-    {
-      id: 0,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: true,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt2 =
-  [
-    {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt3 =
-  [
-    {
-      id: 0,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: true,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt4 =
+const nivelData1 =
   [
     {
       id: 0,
@@ -548,182 +29,11 @@ const alt4 =
       valor: false,
       touched: false,
       nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: true,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt5 =
+    }]
+
+const nivelData2 =
   [
     {
-      id: 0,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
       id: 3,
       valor: true,
       touched: false,
@@ -740,182 +50,10 @@ const alt5 =
       valor: false,
       touched: false,
       nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: true,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt6 =
+    }]
+const nivelData3 =
   [
     {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
       id: 6,
       valor: true,
       touched: false,
@@ -932,182 +70,10 @@ const alt6 =
       valor: false,
       touched: false,
       nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt7 =
+    }]
+const nivelData4 =
   [
     {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
       id: 9,
       valor: false,
       touched: false,
@@ -1124,8 +90,9 @@ const alt7 =
       valor: true,
       touched: false,
       nivel: 4
-    },
-    // ----------------------
+    }]
+const nivelData5 =
+  [
     {
       id: 12,
       valor: false,
@@ -1143,11 +110,12 @@ const alt7 =
       valor: false,
       touched: false,
       nivel: 5
-    },
-    // ----------------------
+    }]
+const nivelData6 =
+  [
     {
       id: 15,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 6
     },
@@ -1159,11 +127,12 @@ const alt7 =
     },
     {
       id: 17,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 6
-    },
-    // ----------------------
+    }]
+const nivelData7 =
+  [
     {
       id: 18,
       valor: false,
@@ -1172,20 +141,21 @@ const alt7 =
     },
     {
       id: 19,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 7
     },
     {
       id: 20,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 7
-    },
-    // ----------------------
+    }]
+const nivelData8 =
+  [
     {
       id: 21,
-      valor: true,
+      valor: false,
       touched: false,
       nivel: 8
     },
@@ -1197,11 +167,12 @@ const alt7 =
     },
     {
       id: 23,
-      valor: false,
+      valor: true,
       touched: false,
       nivel: 8
-    },
-    // ----------------------
+    }]
+const nivelData9 =
+  [
     {
       id: 24,
       valor: false,
@@ -1221,1044 +192,25 @@ const alt7 =
       nivel: 9
     }
   ]
-const alt8 =
-  [
-    {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt9 =
-  [
-    {
-      id: 0,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt10 =
-  [
-    {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: true,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt11 =
-  [
-    {
-      id: 0,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: true,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt12 =
-  [
-    {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
-const alt13 =
-  [
-    {
-      id: 0,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 1,
-      valor: true,
-      touched: false,
-      nivel: 1
-    },
-    {
-      id: 2,
-      valor: false,
-      touched: false,
-      nivel: 1
-    },
-    // ----------------------
-    {
-      id: 3,
-      valor: true,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 4,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    {
-      id: 5,
-      valor: false,
-      touched: false,
-      nivel: 2
-    },
-    // ----------------------
-    {
-      id: 6,
-      valor: true,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 7,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    {
-      id: 8,
-      valor: false,
-      touched: false,
-      nivel: 3
-    },
-    // ----------------------
-    {
-      id: 9,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 10,
-      valor: false,
-      touched: false,
-      nivel: 4
-    },
-    {
-      id: 11,
-      valor: true,
-      touched: false,
-      nivel: 4
-    },
-    // ----------------------
-    {
-      id: 12,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 13,
-      valor: true,
-      touched: false,
-      nivel: 5
-    },
-    {
-      id: 14,
-      valor: false,
-      touched: false,
-      nivel: 5
-    },
-    // ----------------------
-    {
-      id: 15,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 16,
-      valor: false,
-      touched: false,
-      nivel: 6
-    },
-    {
-      id: 17,
-      valor: true,
-      touched: false,
-      nivel: 6
-    },
-    // ----------------------
-    {
-      id: 18,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 19,
-      valor: false,
-      touched: false,
-      nivel: 7
-    },
-    {
-      id: 20,
-      valor: true,
-      touched: false,
-      nivel: 7
-    },
-    // ----------------------
-    {
-      id: 21,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 22,
-      valor: false,
-      touched: false,
-      nivel: 8
-    },
-    {
-      id: 23,
-      valor: true,
-      touched: false,
-      nivel: 8
-    },
-    // ----------------------
-    {
-      id: 24,
-      valor: false,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 25,
-      valor: true,
-      touched: false,
-      nivel: 9
-    },
-    {
-      id: 26,
-      valor: false,
-      touched: false,
-      nivel: 9
-    }
-  ]
+
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 
 export default function Home() {
   const [data, setData] = useState([])
@@ -2277,9 +229,10 @@ export default function Home() {
   const [nivelPasado, setNivelPasado] = useState(0)
   const [sinEfecto, setSinEfecto] = useState(true)
 
+
   useEffect(() => {
-    const obtenerNumeroAleatorio = getRandomInt(13)
-    if (obtenerNumeroAleatorio == 0) {
+    /* const obtenerNumeroAleatorio = getRandomInt(13) */
+    /* if (obtenerNumeroAleatorio == 0) {
       setData(alt1)
     } else if (obtenerNumeroAleatorio == 1) {
       setData(alt2)
@@ -2305,16 +258,25 @@ export default function Home() {
       setData(alt12)
     } else {
       setData(alt13)
-    }
+    } */
+    shuffle(nivelData1)
+    shuffle(nivelData2)
+    shuffle(nivelData3)
+    shuffle(nivelData4)
+    shuffle(nivelData5)
+    shuffle(nivelData6)
+    shuffle(nivelData7)
+    shuffle(nivelData8)
+    shuffle(nivelData9)
+
     setTimeout(() => {
       mostrarCamino()
       setTimeout(() => {
         ocultarCamino()
       }, "1200");
     }, "2000");
-
-
   }, [])
+
 
   function mostrarCamino() {
     setNivelUno(true)
@@ -2445,7 +407,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center fondo-cielo">
-      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-7xl drop-shadow-lg text-center mt-20'>La mejor ruta aérea<br/> entre Argentina y Brasil.</h1>
+      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-7xl drop-shadow-lg text-center mt-20'>La mejor ruta aérea<br /> entre Argentina y Brasil.</h1>
       <div className='animate-fade animate-delay-500 animate-duration-[1500ms] grid grid-cols-3 gap-4 p-12'>
         {endState &&
           <>
@@ -2473,55 +435,55 @@ export default function Home() {
           </>
         }
 
-        {filtrarNivel(9).map((item) => {
+        {nivelData9.map((item) => {
           return (
             nivelOcho ? item.valor ? nivelNueve ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={9} estado={"default"} /> : <Button isTrue={item.valor} nivel={9} estado={"default"} /> : <Button isTrue={item.valor} nivel={9} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(8).map((item) => {
+        {nivelData8.map((item) => {
           return (
             nivelSiete ? item.valor ? nivelOcho ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={8} estado={"default"} /> : <Button isTrue={item.valor} nivel={8} estado={"default"} /> : <Button isTrue={item.valor} nivel={8} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(7).map((item) => {
+        {nivelData7.map((item) => {
           return (
             nivelSeis ? item.valor ? nivelSiete ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={7} estado={"default"} /> : <Button isTrue={item.valor} nivel={7} estado={"default"} /> : <Button isTrue={item.valor} nivel={7} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(6).map((item) => {
+        {nivelData6.map((item) => {
           return (
             nivelCinco ? item.valor ? nivelSeis ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={6} estado={"default"} /> : <Button isTrue={item.valor} nivel={6} estado={"default"} /> : <Button isTrue={item.valor} nivel={6} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(5).map((item) => {
+        {nivelData5.map((item) => {
           return (
             nivelCuatro ? item.valor ? nivelCinco ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={5} estado={"default"} /> : <Button isTrue={item.valor} nivel={5} estado={"default"} /> : <Button isTrue={item.valor} nivel={5} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(4).map((item) => {
+        {nivelData4.map((item) => {
           return (
             nivelTres ? item.valor ? nivelCuatro ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={4} estado={"default"} /> : <Button isTrue={item.valor} nivel={4} estado={"default"} /> : <Button isTrue={item.valor} nivel={4} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(3).map((item) => {
+        {nivelData3.map((item) => {
           return (
             nivelDos ? item.valor ? nivelTres ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={3} estado={"default"} /> : <Button isTrue={item.valor} nivel={3} estado={"default"} /> : <Button isTrue={item.valor} nivel={3} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(2).map((item) => {
+        {nivelData2.map((item) => {
           return (
             nivelUno ? item.valor ? nivelDos ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={2} estado={"default"} /> : <Button isTrue={item.valor} nivel={2} estado={"default"} /> : <Button isTrue={item.valor} nivel={2} estado={"disabled"} />
           )
         }
         )}
-        {filtrarNivel(1).map((item) => {
+        {nivelData1.map((item) => {
           return (
             item.valor ? nivelUno ? <Button estado={"touched"} /> : <Button isTrue={item.valor} nivel={1} estado={"default"} /> : <Button isTrue={item.valor} nivel={1} estado={"default"} />
           )
