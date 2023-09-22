@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import smiles from "@/public/smiles.png"
-import logo from "@/public/logo.png"
+import logo from "@/public/logobox.png"
 import Confetti from 'react-confetti'
 
 
@@ -378,21 +378,21 @@ export default function Home() {
     switch (estado) {
       case "default": {
         if (isTrue) {
-          return <button onClick={() => { play(nivel) }} className='shadow-2xl rounded-3xl w-40 h-40 bg-orange-500 animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
+          return <button onClick={() => { play(nivel) }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#FF7020] animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
         } else {
           if (nivelPasado > nivel) {
-            return <button disabled className='shadow-2xl border-2 border-orange-400 rounded-3xl w-40 h-40 disabled:bg-orange-300 disabled:opacity-40'></button>
+            return <button disabled className='shadow-2xl border-2 border-[#FF7020] rounded-3xl w-40 h-40 disabled:bg-orange-300 disabled:opacity-40'></button>
           } else {
 
-            return <button onClick={() => { perdiste() }} className='shadow-2xl rounded-3xl w-40 h-40 bg-orange-500 focus:scale-110 transition-all duration-500 animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
+            return <button onClick={() => { perdiste() }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#FF7020] focus:scale-110 transition-all duration-500 animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
           }
         }
       }
       case "disabled": {
-        return <button disabled className='shadow-2xl border-2 border-gray-400 rounded-3xl w-40 h-40 bg-orange-500 disabled:bg-gray-300'></button>
+        return <button disabled className='shadow-2xl border-2 border-gray-400 rounded-3xl w-40 h-40 bg-[#FF7020] disabled:bg-gray-300'></button>
       }
       case "touched": {
-        return <button className='shadow-2xl animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out border-2 border-orange-500 rounded-3xl w-40 h-40 bg-gray-900 bg-opacity-50 transition-all duration-500s flex items-center justify-center'>
+        return <button className='shadow-2xl animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out border-2 border-[#FF7020] rounded-3xl w-40 h-40 bg-white bg-opacity-90 transition-all duration-500s flex items-center justify-center'>
           <Image
             width={130}
             height={100}
