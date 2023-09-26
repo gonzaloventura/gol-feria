@@ -11,7 +11,7 @@ export default function Home() {
         className="flex flex-col text-4xl gap-40 items-center fondo-cielo"
       >
         <div className="mt-[20vh]">
-          <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-7xl drop-shadow-lg text-center mt-20'>La mejor ruta aérea<br /> entre Argentina y Brasil.</h1>
+          <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-6xl drop-shadow-lg text-center mt-20'>Conocé Brasil de la mano de GOL</h1>
 
           <Image
             width={800}

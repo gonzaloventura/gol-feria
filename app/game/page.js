@@ -8283,7 +8283,7 @@ export default function Home() {
     }, "2000");
 
     const listaQrLocalStorage = localStorage.getItem("listaQr")
-    
+
     if (listaQrLocalStorage) {
       setListaQr(JSON.parse(listaQrLocalStorage))
     } else {
@@ -8438,7 +8438,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center fondo-cielo">
-      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-7xl drop-shadow-lg text-center mt-20'>La mejor ruta aérea<br /> entre Argentina y Brasil.</h1>
+      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-6xl drop-shadow-lg text-center mt-20'>Conocé Brasil de la mano de GOL</h1>
       <div className='animate-fade animate-delay-500 animate-duration-[1500ms] grid grid-cols-3 gap-4 p-12'>
         {endState &&
           <>
