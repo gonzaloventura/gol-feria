@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import smiles from "@/public/smiles.png"
 import logo from "@/public/logobox.png"
 import Confetti from 'react-confetti'
-
+import { useQRCode } from 'next-qrcode';
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -229,6 +229,7 @@ export default function Home() {
   const [nivelPasado, setNivelPasado] = useState(0)
   const [sinEfecto, setSinEfecto] = useState(true)
 
+  const { Canvas } = useQRCode();
 
   useEffect(() => {
     /* const obtenerNumeroAleatorio = getRandomInt(13) */
@@ -273,7 +274,7 @@ export default function Home() {
       mostrarCamino()
       setTimeout(() => {
         ocultarCamino()
-      }, "1200");
+      }, "900");
     }, "2000");
   }, [])
 
@@ -421,6 +422,19 @@ export default function Home() {
             </div>
             <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-40 text-orange-600 flex place-content-center items-center -left justify-center z-20'>
               <h1 className='text-9xl font-bold drop-shadow-lg'>FELICITACIONES</h1>
+              <Canvas
+                text={'http://192.168.0.133:3000/1349d26a-8671-4c7d-ae0d-729769f3837b'}
+                options={{
+                  errorCorrectionLevel: 'M',
+                  margin: 1,
+                  scale: 10,
+                  width: 600,
+                  color: {
+                    dark: '#FF7020',
+                    light: '#FFF',
+                  },
+                }}
+              />
               <button className='mt-20 text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
 
