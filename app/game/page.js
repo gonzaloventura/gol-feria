@@ -1,4 +1,5 @@
 'use client'
+
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import smiles from "@/public/smiles.png"
@@ -8235,7 +8236,7 @@ export default function Home() {
 
   const { Canvas } = useQRCode();
 
-  const listaQrLocalStorage = localStorage.getItem("listaQr")
+  const listaQrLocalStorage = localStorage.getItem("listaQr") ? localStorage.getItem("listaQr") : null
 
   useEffect(() => {
     /* const obtenerNumeroAleatorio = getRandomInt(13) */
@@ -8283,9 +8284,6 @@ export default function Home() {
       }, "900");
     }, "2000");
 
-  }, [])
-
-  useEffect(() => {
     if (listaQrLocalStorage) {
       setListaQr(JSON.parse(listaQrLocalStorage))
     } else {
