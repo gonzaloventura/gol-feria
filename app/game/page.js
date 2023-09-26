@@ -8236,8 +8236,6 @@ export default function Home() {
 
   const { Canvas } = useQRCode();
 
-  const listaQrLocalStorage = localStorage.getItem("listaQr") ? localStorage.getItem("listaQr") : null
-
   useEffect(() => {
     /* const obtenerNumeroAleatorio = getRandomInt(13) */
     /* if (obtenerNumeroAleatorio == 0) {
@@ -8284,6 +8282,8 @@ export default function Home() {
       }, "900");
     }, "2000");
 
+    const listaQrLocalStorage = localStorage.getItem("listaQr")
+    
     if (listaQrLocalStorage) {
       setListaQr(JSON.parse(listaQrLocalStorage))
     } else {
