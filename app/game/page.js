@@ -8279,7 +8279,7 @@ export default function Home() {
       mostrarCamino()
       setTimeout(() => {
         ocultarCamino()
-      }, "900");
+      }, "1500");
     }, "2000");
 
     const listaQrLocalStorage = localStorage.getItem("listaQr")
@@ -8446,13 +8446,13 @@ export default function Home() {
               <Confetti
                 width={1080}
                 height={1920}
-                colors={['#707070', '#FFB814']}
+                colors={['#1f1f1f', '#9b9b9b']}
                 numberOfPieces={400}
               />
             </div>
-            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-40 text-gray-600 flex place-content-center items-center -left justify-center z-20'>
+            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-40 text-gray-900 flex place-content-center items-center -left justify-center z-20'>
               <h1 className='text-9xl font-bold drop-shadow-lg'>FELICITACIONES</h1>
-              <Canvas
+              {/* <Canvas
                 text={`https://formulario-gol.vercel.app/${listaQr[obtenerIndex()].id}`}
                 options={{
                   errorCorrectionLevel: 'M',
@@ -8464,8 +8464,8 @@ export default function Home() {
                     light: '#FFF',
                   },
                 }}
-              />
-              <button className='mt-20 text-5xl transition-all duration-500 border border-gray-500 bg-gray-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-gray-500' onClick={() => location.replace('/')}>Regresar</button>
+              /> */}
+              <button className='mt-20 text-5xl transition-all duration-500 border border-gray-500 bg-gray-800 bg-opacity-80 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-gray-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
 
           </>
@@ -8473,7 +8473,7 @@ export default function Home() {
         {lostState &&
           <>
             <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-60 text-gray-600 flex place-content-center items-center -left justify-center z-20'>
-              <h1 className='text-9xl font-bold animate-jump-in animate-delay-500 animate-duration-[2500ms]'>GAME OVER</h1>
+              <h1 className='text-9xl font-bold animate-jump-in animate-delay-500 animate-duration-[2500ms]'>FIN DE JUEGO</h1>
               <button className='text-5xl transition-all duration-500 border border-gray-500 bg-gray-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-gray-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
           </>
