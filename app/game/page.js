@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import smiles from "@/public/smiles.png"
-import logo from "@/public/logobox.png"
+import logo from "@/public/sodaboxlow.png"
 import Confetti from 'react-confetti'
 import { useQRCode } from 'next-qrcode';
 
@@ -8426,8 +8426,8 @@ export default function Home() {
       case "touched": {
         return <button className='shadow-2xl animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out border-2 border-[#707070] rounded-3xl w-40 h-40 bg-white bg-opacity-90 transition-all duration-500s flex items-center justify-center'>
           <Image
-            width={130}
-            height={100}
+            width={100}
+            height={80}
             src={logo}
           /></button>
       }
