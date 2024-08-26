@@ -8410,21 +8410,21 @@ export default function Home() {
     switch (estado) {
       case "default": {
         if (isTrue) {
-          return <button onClick={() => { play(nivel) }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#FF7020] animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
+          return <button onClick={() => { play(nivel) }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#707070] animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
         } else {
           if (nivelPasado > nivel) {
-            return <button disabled className='shadow-2xl border-2 border-[#FF7020] rounded-3xl w-40 h-40 disabled:bg-orange-300 disabled:opacity-40'></button>
+            return <button disabled className='shadow-2xl border-2 border-[#707070] rounded-3xl w-40 h-40 disabled:bg-gray-300 disabled:opacity-40'></button>
           } else {
 
-            return <button onClick={() => { perdiste() }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#FF7020] focus:scale-110 transition-all duration-500 animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
+            return <button onClick={() => { perdiste() }} className='shadow-2xl rounded-3xl w-40 h-40 bg-[#707070] focus:scale-110 transition-all duration-500 animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out'></button>
           }
         }
       }
       case "disabled": {
-        return <button disabled className='shadow-2xl border-2 border-gray-400 rounded-3xl w-40 h-40 bg-[#FF7020] disabled:bg-gray-300'></button>
+        return <button disabled className='shadow-2xl border-2 border-gray-400 rounded-3xl w-40 h-40 bg-[#707070] disabled:bg-gray-300'></button>
       }
       case "touched": {
-        return <button className='shadow-2xl animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out border-2 border-[#FF7020] rounded-3xl w-40 h-40 bg-white bg-opacity-90 transition-all duration-500s flex items-center justify-center'>
+        return <button className='shadow-2xl animate-pulse animate-twice animate-duration-[500ms] animate-ease-in-out border-2 border-[#707070] rounded-3xl w-40 h-40 bg-white bg-opacity-90 transition-all duration-500s flex items-center justify-center'>
           <Image
             width={130}
             height={100}
@@ -8438,7 +8438,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center fondo-cielo">
-      <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-6xl drop-shadow-lg text-center mt-20'>Conocé Brasil de la mano de GOL</h1>
+      {/* <h1 className='animate-fade animate-once animate-delay-500 animate-duration-[500ms] text-6xl drop-shadow-lg text-center mt-20'>Conocé Brasil de la mano de GOL</h1> */}
       <div className='animate-fade animate-delay-500 animate-duration-[1500ms] grid grid-cols-3 gap-4 p-12'>
         {endState &&
           <>
@@ -8446,11 +8446,11 @@ export default function Home() {
               <Confetti
                 width={1080}
                 height={1920}
-                colors={['#FF7020', '#FFB814']}
+                colors={['#707070', '#FFB814']}
                 numberOfPieces={400}
               />
             </div>
-            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-40 text-orange-600 flex place-content-center items-center -left justify-center z-20'>
+            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-40 text-gray-600 flex place-content-center items-center -left justify-center z-20'>
               <h1 className='text-9xl font-bold drop-shadow-lg'>FELICITACIONES</h1>
               <Canvas
                 text={`https://formulario-gol.vercel.app/${listaQr[obtenerIndex()].id}`}
@@ -8460,21 +8460,21 @@ export default function Home() {
                   scale: 10,
                   width: 600,
                   color: {
-                    dark: '#FF7020',
+                    dark: '#707070',
                     light: '#FFF',
                   },
                 }}
               />
-              <button className='mt-20 text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500' onClick={() => location.replace('/')}>Regresar</button>
+              <button className='mt-20 text-5xl transition-all duration-500 border border-gray-500 bg-gray-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-gray-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
 
           </>
         }
         {lostState &&
           <>
-            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-60 text-orange-600 flex place-content-center items-center -left justify-center z-20'>
+            <div className='animate-fade animate-delay-500 animate-once gap-10 flex-col absolute left-0 top-0 transition-all duration-1000  min-w-full min-h-screen bg-white bg-opacity-60 text-gray-600 flex place-content-center items-center -left justify-center z-20'>
               <h1 className='text-9xl font-bold animate-jump-in animate-delay-500 animate-duration-[2500ms]'>GAME OVER</h1>
-              <button className='text-5xl transition-all duration-500 border border-orange-500 bg-orange-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-orange-500' onClick={() => location.replace('/')}>Regresar</button>
+              <button className='text-5xl transition-all duration-500 border border-gray-500 bg-gray-500 bg-opacity-50 text-white rounded-full shadow px-16 py-6 animate-pulse focus:scale-125 focus:shadow focus:shadow-gray-500' onClick={() => location.replace('/')}>Regresar</button>
             </div>
           </>
         }

@@ -2,25 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("/public/fonts/GOLSansText-Regular.woff");
-@import url("/public/fonts/GOLSansText-Bold.woff");
-@import url("/public/fonts/GOLSansText-Bold.ttf");
-@import url("/public/fonts/GOLSansText-Bold.ttf");
+@import url("/public/fonts/SodaFont.woff");
 
 @font-face {
-  font-family: "GOLSansTextRegular";
+  font-family: "SodaFont";
   font-style: normal;
-  src: url("/fonts/GOLSansText-Regular.woff") format('woff');
+  src: url("/fonts/SodaFont.woff") format('woff');
 }
 @font-face {
-  font-family: "GOLSansText-Bold";
+  font-family: "SodaFont";
   font-style: bold;
-  src: url("/fonts/GOLSansText-Bold.woff") format('woff');
+  src: url("/fonts/SodaFont.woff") format('woff');
 }
 
 
 *{
-  font-family: 'GOLSansTextRegular';
+  font-family: 'SodaFont';
   font-style: normal;
 }
 
@@ -36,8 +33,8 @@ body {
 }
 
 .fondo-cielo{
-  background: rgb(60,196,222);
-  background: linear-gradient(90deg, rgba(60,196,222,0.2) 0%, rgba(42,157,255,0.2) 100%);
+  background: rgb(204, 204, 204);
+  background: linear-gradient(90deg, rgba(134, 134, 134, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);
   height: 100vh;
 }
 
